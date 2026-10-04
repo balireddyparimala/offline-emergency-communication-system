@@ -107,3 +107,11 @@ offline-emergency-communication-system/
 │       └── diagram.json
 │
 └── README.md
+
+## Wokwi Simulation
+
+### Transmitter Simulation
+https://wokwi.com/projects/476937528729322497
+
+### Receiver Simulation
+https://wokwi.com/projects/476938522958842881
