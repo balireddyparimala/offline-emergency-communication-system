@@ -182,3 +182,13 @@ Emergency message sent.
 Emergency transmission completed.
 System Ready.
 Press SOS button...
+```
+## Simulation Evidence
+
+### Transmitter Test
+
+![Transmitter Simulation Test](simulation/transmitter-test.png.png)
+
+### Receiver Test
+
+![Receiver Simulation Test](simulation/receiver-test.png.png)
