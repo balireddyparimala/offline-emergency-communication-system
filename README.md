@@ -115,3 +115,49 @@ https://wokwi.com/projects/476937528729322497
 
 ### Receiver Simulation
 https://wokwi.com/projects/476938522958842881
+
+## System Architecture
+
+The system consists of two ESP32-based communication nodes:
+
+```text
+[Emergency User]
+       |
+   SOS Button
+       |
+[ESP32 Transmitter]
+       |
+    ESP-NOW
+       |
+[ESP32 Receiver]
+       |
+   LED + Buzzer
+       |
+[Emergency Alert]
+
+### Working Principle
+
+1. The user presses the SOS button on the transmitter node.
+2. The transmitter ESP32 detects the button press.
+3. An emergency message is prepared as `EMERGENCY ALERT`.
+4. The message is transmitted using ESP-NOW, which operates without Internet or cellular networks.
+5. The receiver ESP32 is designed to receive the emergency message.
+6. When the message is received, the receiver activates the LED and buzzer.
+7. The alert provides a local indication that an emergency message has been received.
+
+### Communication Technology
+
+- **Microcontroller:** ESP32
+- **Wireless Technology:** ESP-NOW
+- **Internet Required:** No
+- **Cellular Network Required:** No
+- **Transmitter Input:** SOS Push Button
+- **Receiver Output:** LED and Buzzer
+- **Simulation Platform:** Wokwi
+
+### Simulation Note
+
+The transmitter and receiver are implemented as separate Wokwi simulations. They represent the two ESP32 nodes of the proposed offline communication system. The simulations verify the individual transmitter and receiver operations, while ESP-NOW is the intended direct wireless communication mechanism between the two nodes in the complete system.
+### Simulation Note
+
+The transmitter and receiver are implemented as separate Wokwi simulations. They represent the two ESP32 nodes of the proposed offline communication system. The simulations verify the individual transmitter and receiver operations, while ESP-NOW is the intended direct wireless communication mechanism between the two nodes in the complete system.
