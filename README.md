@@ -158,6 +158,27 @@ The system consists of two ESP32-based communication nodes:
 ### Simulation Note
 
 The transmitter and receiver are implemented as separate Wokwi simulations. They represent the two ESP32 nodes of the proposed offline communication system. The simulations verify the individual transmitter and receiver operations, while ESP-NOW is the intended direct wireless communication mechanism between the two nodes in the complete system.
-### Simulation Note
+## Simulation Results
 
-The transmitter and receiver are implemented as separate Wokwi simulations. They represent the two ESP32 nodes of the proposed offline communication system. The simulations verify the individual transmitter and receiver operations, while ESP-NOW is the intended direct wireless communication mechanism between the two nodes in the complete system.
+### Transmitter Test
+
+The ESP32 transmitter simulation was tested by pressing the SOS push button.
+
+The Serial Monitor confirmed:
+
+- SOS button press detected
+- Emergency message prepared
+- Emergency message transmitted three times
+- Emergency transmission completed successfully
+- System returned to ready state
+
+Example output:
+
+```text
+SOS BUTTON PRESSED
+Emergency message sent.
+Emergency message sent.
+Emergency message sent.
+Emergency transmission completed.
+System Ready.
+Press SOS button...
